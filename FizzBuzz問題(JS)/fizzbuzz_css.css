@@ -1,0 +1,53 @@
+body
+{
+ width:100%;
+ margin-left:auto;
+ margin-right:auto; 
+ background-color:aliceblue;
+ text-align:center;
+}
+
+.paramTable
+{
+ margin:10px 0px;
+ border:2px;
+ background-color:white;
+}
+
+.outputArea
+{
+ overflow: hidden;
+ width:100%;
+  height: 100%;
+}
+
+#resultTextArea
+{
+ width: 100%;
+ height: 200px;
+ overflow: scroll;   /* スクロール表示 */ 
+}
+
+#resultCanvas
+{
+ width:99%;
+ height: 200px;
+ border:solid 1px;
+ background-color:white;
+}
+
+td.outputTd
+{
+ width:50%;
+ height:100%;
+ text-align: center;
+ border:none;
+}
+
+.button
+{
+ width: 100px;
+ height: 50px;
+ margin:10px 0px;
+ text-align: center;
+}

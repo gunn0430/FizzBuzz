@@ -1,0 +1,60 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>
+		FizzBuzz問題
+	</title>
+	<script type="text/javascript" src="fizzbuzz_js.js"></script>
+	<link rel="stylesheet" type="text/css" href="fizzbuzz_css.css" media="all">
+</style>
+</head>
+<body>
+<center>
+	<table class="paramTable" rules="all">
+		<tr>
+			<th>fizz</th>
+			<td>
+				<input type="text" id="textFizz" name="fizz" value="fizz">
+			</td>
+		</tr>
+		<tr>
+			<th>buzz</th>
+			<td>
+				<input type="text" id="textBuzz" name="buzz" value="buzz">
+			</td>
+		</tr>
+		<tr>
+			<th>試行回数</th>
+			<td>
+				<input type="text" id="textMaxCount" name="MaxCount" value="100">
+			</td>
+		</tr>
+	</table>
+	
+	<table id="outputTable" rules="all">
+		<tr>
+			<td class="outputTd">TextArea</td>
+			<td class="outputTd">Canvas</td>
+		</tr>
+		<tr>
+			<td class="outputTd">
+				<textarea id="resultTextArea" name="resultTextArea" value="" readonly></textarea>
+				<div>
+					<input type="button" class="button"  id="fizzbuzzButton_text" name="button" value="実行" onclick="StartFizzBuzzTextbox()">
+				</div>
+			</td>
+			<td class="outputTd">
+				<canvas id="resultCanvas"></canvas>
+				<div>
+					<input type="button" class="button"  id="fizzbuzzButton_canvas" name="button" value="実行" onclick="StartFizzBuzzCanvas()">
+				</div>
+			</td>
+		</tr>
+	<table>
+</center>
+</body>
+<form name="canvasTimer">
+	<input type="hidden" name="count" value="0">
+</form>
+</html>
